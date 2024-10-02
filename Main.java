@@ -5,11 +5,11 @@ public class Main {
         String confirmPassword = "123456";
         try {
             CheckLoginPassword.check(login, password, confirmPassword);
-            System.out.println("Пароль соответствует требованиям .");
+            System.out.println("Пароль соответствует требованиям.");
         } catch (WrongLoginException | WrongPasswordException e) {
             System.out.println(e.getMessage());
         } finally {
-            System.out.println("Проверка пароля завершена .");
+            System.out.println("Проверка пароля завершена.");
         }
     }
 }
